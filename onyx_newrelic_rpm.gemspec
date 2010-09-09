@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{onyx_newrelic_rpm}
-  s.version = "2.12.4"
+  s.version = "2.12.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Onyx Team"]
@@ -118,7 +118,6 @@ for logging memcached keys.
      "lib/tasks/install.rake",
      "lib/tasks/tests.rake",
      "newrelic.yml",
-     "newrelic_rpm.gemspec",
      "onyx_newrelic_rpm.gemspec",
      "recipes/newrelic.rb",
      "test/active_record_fixtures.rb",
