@@ -4,20 +4,21 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{newrelic_rpm}
-  s.version = "2.12.3"
+  s.name = %q{onyx_newrelic_rpm}
+  s.version = "2.12.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Bill Kayser"]
-  s.date = %q{2010-06-10}
+  s.authors = ["Onyx Team"]
+  s.date = %q{2010-09-09}
   s.description = %q{New Relic RPM is a Ruby performance management system, developed by
 New Relic, Inc (http://www.newrelic.com).  RPM provides you with deep
 information about the performance of your Ruby on Rails or Merb
 application as it runs in production. The New Relic Agent is
 dual-purposed as a either a Rails plugin or a Gem, hosted on
-http://github.com/newrelic/rpm/tree/master.
+http://github.com/newrelic/rpm/tree/master. This fork has support
+for logging memcached keys.
 }
-  s.email = %q{support@newrelic.com}
+  s.email = %q{aaghareza@ove.com}
   s.executables = ["mongrel_rpm", "newrelic_cmd"]
   s.extra_rdoc_files = [
     "CHANGELOG",
@@ -118,6 +119,7 @@ http://github.com/newrelic/rpm/tree/master.
      "lib/tasks/tests.rake",
      "newrelic.yml",
      "newrelic_rpm.gemspec",
+     "onyx_newrelic_rpm.gemspec",
      "recipes/newrelic.rb",
      "test/active_record_fixtures.rb",
      "test/config/newrelic.yml",
@@ -189,7 +191,8 @@ http://github.com/newrelic/rpm/tree/master.
      "ui/views/newrelic/stylesheets/style.css",
      "ui/views/newrelic/threads.rhtml"
   ]
-  s.homepage = %q{http://www.github.com/newrelic/rpm}
+  s.has_rdoc = true
+  s.homepage = %q{http://www.github.com/onyx/rpm}
   s.post_install_message = %q{
 Please see http://support.newrelic.com/faqs/docs/ruby-agent-release-notes
 for a complete description of the features and enhancements available
@@ -200,7 +203,7 @@ For details on this specific release, refer to the CHANGELOG file.
 }
   s.rdoc_options = ["--charset=UTF-8", "--line-numbers", "--inline-source", "--title", "New Relic RPM"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.2}
   s.summary = %q{New Relic Ruby Performance Monitoring Agent}
 
   if s.respond_to? :specification_version then
