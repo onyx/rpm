@@ -3,11 +3,11 @@ require 'rake'
 require "#{File.dirname(__FILE__)}/lib/new_relic/version.rb"
 require 'rake/testtask'
 
-GEM_NAME = "newrelic_rpm"
+GEM_NAME = "onyx_newrelic_rpm"
 GEM_VERSION = NewRelic::VERSION::STRING
-AUTHOR = "Bill Kayser"
-EMAIL = "support@newrelic.com"
-HOMEPAGE = "http://www.github.com/newrelic/rpm"
+AUTHOR = "Onyx Team"
+EMAIL = "aaghareza@ove.com"
+HOMEPAGE = "http://www.github.com/onyx/rpm"
 SUMMARY = "New Relic Ruby Performance Monitoring Agent"
 URGENT_README = "README-#{GEM_VERSION}"
 # See http://www.rubygems.org/read/chapter/20 
@@ -22,7 +22,8 @@ New Relic, Inc (http://www.newrelic.com).  RPM provides you with deep
 information about the performance of your Ruby on Rails or Merb
 application as it runs in production. The New Relic Agent is
 dual-purposed as a either a Rails plugin or a Gem, hosted on
-http://github.com/newrelic/rpm/tree/master.
+http://github.com/newrelic/rpm/tree/master. This fork has support
+for logging memcached keys.
     EOF
     gem.email = EMAIL
     gem.homepage = HOMEPAGE
